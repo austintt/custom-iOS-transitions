@@ -10,16 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var coverImage: UIImageView!
+    @IBOutlet weak var cardView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        configureCard()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func configureCard() {
+        
+        // Corners and shadow
+        cardView.layer.cornerRadius = 14
+        cardView.layer.shadowOpacity = 0.25
+        cardView.layer.shadowOffset = CGSize(width: 0, height: 10)
+        cardView.layer.shadowRadius = 10
+        coverImage.contentMode = .scaleAspectFill
+        coverImage.clipsToBounds = true
+        coverImage.layer.cornerRadius = 14
+        
+        // Content
+        titleLabel.text = CardData.shared.title
+        captionLabel.text = CardData.shared.caption
+        coverImage.image = CardData.shared.coverImage
     }
-
 
 }
 
