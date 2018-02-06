@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var coverImage: UIImageView!
     @IBOutlet weak var cardView: UIView!
     
+    let cardPresentationViewController = CardPresentationViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,7 +50,46 @@ class ViewController: UIViewController {
             destination.caption = CardData.shared.caption
             destination.cover = CardData.shared.coverImage
             destination.descriptionText = CardData.shared.description
+            destination.transitioningDelegate = self
+            
+            // Prep for animation
+//            let cellFrame = destination.view.frame
+//            cardPresentationViewController.cellFrame = cellFrame
+//            cardPresentationViewController.cellTransform = animateCell(cellFrame: cellFrame)
+            
         }
+    }
+    
+    func animateCell(cellFrame: CGRect) -> CATransform3D {
+        let angleFromX = Double((-cellFrame.origin.x) / 10)
+        let angle = CGFloat((angleFromX * Double.pi) / 180.0)
+        var transform = CATransform3DIdentity
+        transform.m34 = -1.0/1000
+        let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
+        
+        var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000
+        let scaleMax: CGFloat = 1.0
+        let scaleMin: CGFloat = 0.6
+        if scaleFromX > scaleMax {
+            scaleFromX = scaleMax
+        }
+        if scaleFromX < scaleMin {
+            scaleFromX = scaleMin
+        }
+        let scale = CATransform3DScale(CATransform3DIdentity, scaleFromX, scaleFromX, 1)
+        
+        return CATransform3DConcat(rotation, scale)
     }
 }
 
+// MARK: Extensions
+
+/*****
+ * Transition Delegates refer a view controller to where it can find a transition. Everytime an object asks `ViewController`
+ * which transition to perform, return `cardPresentationViewController`.
+ *****/
+extension ViewController : UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return cardPresentationViewController
+    }
+}

@@ -82,7 +82,7 @@
                 <tapGestureRecognizer id="WbC-o3-xJO">
                     <connections>
                         <action selector="cardTapped:" destination="BYZ-38-t0r" id="kCI-DW-0MU"/>
-                        <segue destination="ZMg-t4-XMo" kind="showDetail" identifier="cardDetailSegue" id="nvY-6w-z3s"/>
+                        <segue destination="ZMg-t4-XMo" kind="presentation" identifier="cardDetailSegue" id="nvY-6w-z3s"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -169,7 +169,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Tic-eu-HqG" secondAttribute="trailing" id="ZJJ-VA-7Ad"/>
                                             <constraint firstItem="qt3-j4-YQl" firstAttribute="top" secondItem="Lsk-wP-8F2" secondAttribute="top" constant="40" id="bOf-7f-OWn"/>
                                             <constraint firstItem="lpx-nn-brQ" firstAttribute="leading" secondItem="Lsk-wP-8F2" secondAttribute="leading" constant="20" id="hDw-NH-1i2"/>
-                                            <constraint firstAttribute="height" constant="420" id="k0T-lB-NIt"/>
+                                            <constraint firstAttribute="height" priority="999" constant="420" id="k0T-lB-NIt"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTo-yi-mCx">
@@ -179,24 +179,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.86274509799999999" green="0.86666666670000003" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="KTo-yi-mCx" secondAttribute="trailing" constant="20" id="MnL-Fj-Sg2"/>
                                     <constraint firstItem="Lsk-wP-8F2" firstAttribute="leading" secondItem="AOt-Cv-WgP" secondAttribute="leading" id="TKW-HJ-SP6"/>
                                     <constraint firstItem="Lsk-wP-8F2" firstAttribute="top" secondItem="AOt-Cv-WgP" secondAttribute="top" id="fgY-0z-97P"/>
-                                    <constraint firstItem="KTo-yi-mCx" firstAttribute="top" secondItem="Lsk-wP-8F2" secondAttribute="bottom" constant="30" id="gVR-yj-rv1"/>
+                                    <constraint firstItem="KTo-yi-mCx" firstAttribute="top" secondItem="Lsk-wP-8F2" secondAttribute="bottom" priority="999" constant="30" id="gVR-yj-rv1"/>
                                     <constraint firstItem="Lsk-wP-8F2" firstAttribute="centerX" secondItem="AOt-Cv-WgP" secondAttribute="centerX" id="hI1-MM-Qpf"/>
                                     <constraint firstItem="KTo-yi-mCx" firstAttribute="leading" secondItem="AOt-Cv-WgP" secondAttribute="leading" constant="20" id="hlZ-e8-eYJ"/>
                                     <constraint firstAttribute="trailing" secondItem="Lsk-wP-8F2" secondAttribute="trailing" id="iGQ-4O-3ZE"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lsk-wP-8F2" secondAttribute="bottom" constant="500" id="ks5-3T-7xa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lsk-wP-8F2" secondAttribute="bottom" priority="999" constant="500" id="ks5-3T-7xa"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="hbW-Ie-fov"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="AOt-Cv-WgP" secondAttribute="trailing" id="Mlq-JP-6ed"/>
-                            <constraint firstItem="AOt-Cv-WgP" firstAttribute="bottom" secondItem="3mS-WJ-bPL" secondAttribute="bottom" id="WKi-L8-P2D"/>
+                            <constraint firstAttribute="trailing" secondItem="AOt-Cv-WgP" secondAttribute="trailing" priority="999" id="Mlq-JP-6ed"/>
+                            <constraint firstItem="AOt-Cv-WgP" firstAttribute="bottom" secondItem="3mS-WJ-bPL" secondAttribute="bottom" priority="999" id="WKi-L8-P2D"/>
                             <constraint firstItem="AOt-Cv-WgP" firstAttribute="leading" secondItem="3mS-WJ-bPL" secondAttribute="leading" id="gb7-HY-ode"/>
                             <constraint firstItem="AOt-Cv-WgP" firstAttribute="top" secondItem="3mS-WJ-bPL" secondAttribute="top" id="k0j-kG-olD"/>
                         </constraints>
@@ -205,7 +204,9 @@
                     <connections>
                         <outlet property="captionLabel" destination="lpx-nn-brQ" id="0ra-tL-y5r"/>
                         <outlet property="coverImage" destination="Tic-eu-HqG" id="eFp-hc-JoY"/>
+                        <outlet property="coverView" destination="Lsk-wP-8F2" id="Mdu-NA-x3l"/>
                         <outlet property="descriptionLabel" destination="KTo-yi-mCx" id="QRZ-l7-YrX"/>
+                        <outlet property="scrollView" destination="AOt-Cv-WgP" id="t5f-Pj-Fri"/>
                         <outlet property="titleLabel" destination="lKe-FZ-dul" id="LFs-eq-ybX"/>
                     </connections>
                 </viewController>

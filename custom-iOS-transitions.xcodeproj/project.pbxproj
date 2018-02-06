@@ -10,6 +10,7 @@
 		D90863E6202944FC007C7A1A /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90863E5202944FC007C7A1A /* CardData.swift */; };
 		D90863E8202947D8007C7A1A /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90863E7202947D8007C7A1A /* CardDetailViewController.swift */; };
 		D90863EA20294E80007C7A1A /* UIViewController+UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90863E920294E80007C7A1A /* UIViewController+UnwindSegue.swift */; };
+		D90863EC20296711007C7A1A /* CardPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90863EB20296711007C7A1A /* CardPresentationViewController.swift */; };
 		D90C288C2029406D0034A929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C288B2029406D0034A929 /* AppDelegate.swift */; };
 		D90C288E2029406D0034A929 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C288D2029406D0034A929 /* ViewController.swift */; };
 		D90C28912029406D0034A929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90C288F2029406D0034A929 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		D90863E5202944FC007C7A1A /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		D90863E7202947D8007C7A1A /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		D90863E920294E80007C7A1A /* UIViewController+UnwindSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UnwindSegue.swift"; sourceTree = "<group>"; };
+		D90863EB20296711007C7A1A /* CardPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationViewController.swift; sourceTree = "<group>"; };
 		D90C28882029406D0034A929 /* custom-iOS-transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-iOS-transitions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90C288B2029406D0034A929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D90C288D2029406D0034A929 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				D90C288B2029406D0034A929 /* AppDelegate.swift */,
 				D90C288D2029406D0034A929 /* ViewController.swift */,
 				D90863E7202947D8007C7A1A /* CardDetailViewController.swift */,
+				D90863EB20296711007C7A1A /* CardPresentationViewController.swift */,
 				D90863E5202944FC007C7A1A /* CardData.swift */,
 				D90C288F2029406D0034A929 /* Main.storyboard */,
 				D90C28922029406D0034A929 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			files = (
 				D90863E6202944FC007C7A1A /* CardData.swift in Sources */,
 				D90863EA20294E80007C7A1A /* UIViewController+UnwindSegue.swift in Sources */,
+				D90863EC20296711007C7A1A /* CardPresentationViewController.swift in Sources */,
 				D90863E8202947D8007C7A1A /* CardDetailViewController.swift in Sources */,
 				D90C288E2029406D0034A929 /* ViewController.swift in Sources */,
 				D90C288C2029406D0034A929 /* AppDelegate.swift in Sources */,
