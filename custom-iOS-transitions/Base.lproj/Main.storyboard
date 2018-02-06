@@ -203,6 +203,7 @@
                     </view>
                     <connections>
                         <outlet property="captionLabel" destination="lpx-nn-brQ" id="0ra-tL-y5r"/>
+                        <outlet property="closeButtonView" destination="qt3-j4-YQl" id="BWj-W3-i10"/>
                         <outlet property="coverImage" destination="Tic-eu-HqG" id="eFp-hc-JoY"/>
                         <outlet property="coverView" destination="Lsk-wP-8F2" id="Mdu-NA-x3l"/>
                         <outlet property="descriptionLabel" destination="KTo-yi-mCx" id="QRZ-l7-YrX"/>

@@ -16,6 +16,7 @@ class CardDetailViewController: UIViewController {
     @IBOutlet weak var coverImage: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var coverView: UIView!
+    @IBOutlet weak var closeButtonView: UIVisualEffectView!
     
     var titleText: String!
     var caption: String!

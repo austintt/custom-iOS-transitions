@@ -53,32 +53,9 @@ class ViewController: UIViewController {
             destination.transitioningDelegate = self
             
             // Prep for animation
-//            let cellFrame = destination.view.frame
-//            cardPresentationViewController.cellFrame = cellFrame
-//            cardPresentationViewController.cellTransform = animateCell(cellFrame: cellFrame)
-            
+            let cardFrame = self.view.convert(cardView.frame, to: view)
+            cardPresentationViewController.cardFrame = cardFrame
         }
-    }
-    
-    func animateCell(cellFrame: CGRect) -> CATransform3D {
-        let angleFromX = Double((-cellFrame.origin.x) / 10)
-        let angle = CGFloat((angleFromX * Double.pi) / 180.0)
-        var transform = CATransform3DIdentity
-        transform.m34 = -1.0/1000
-        let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
-        
-        var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000
-        let scaleMax: CGFloat = 1.0
-        let scaleMin: CGFloat = 0.6
-        if scaleFromX > scaleMax {
-            scaleFromX = scaleMax
-        }
-        if scaleFromX < scaleMin {
-            scaleFromX = scaleMin
-        }
-        let scale = CATransform3DScale(CATransform3DIdentity, scaleFromX, scaleFromX, 1)
-        
-        return CATransform3DConcat(rotation, scale)
     }
 }
 
