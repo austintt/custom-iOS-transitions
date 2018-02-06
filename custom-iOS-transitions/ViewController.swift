@@ -46,6 +46,8 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "cardDetailSegue", let destination = segue.destination as? CardDetailViewController {
+            
+            // Pass in the data
             destination.titleText = CardData.shared.title
             destination.caption = CardData.shared.caption
             destination.cover = CardData.shared.coverImage
@@ -59,11 +61,11 @@ class ViewController: UIViewController {
     }
 }
 
-// MARK: Extensions
+// MARK: Transition Extensions
 
 /*****
  * Transition Delegates refer a view controller to where it can find a transition. Everytime an object asks `ViewController`
- * which transition to perform, return `cardPresentationViewController`.
+ * which transition to perform, return the desired presentation controller.
  *****/
 extension ViewController : UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
