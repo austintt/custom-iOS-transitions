@@ -33,25 +33,24 @@ class CardPresentationViewController: NSObject, UIViewControllerAnimatedTransiti
         // Place over the card
         let translate = CATransform3DMakeTranslation(cardFrame.origin.x, cardFrame.origin.y, 0.0)
         destination.view.layer.transform = translate
-        destination.view.layer.zPosition = 999
         containerView.layoutIfNeeded() // force update if needed
         
-        // Make it look like the card's cover image
+        // Make it look like the card's cover image before we start
         destination.scrollView.layer.cornerRadius = 14
         destination.scrollView.layer.shadowOpacity = 0.25
         destination.scrollView.layer.shadowOffset.height = 10
         destination.scrollView.layer.shadowRadius = 20
         
-        // Extra animations for close button and content
+        // Extra animations for close
         let moveUpTransform = CGAffineTransform(translationX: 0, y: -100)
         let scaleUpTranform = CGAffineTransform(scaleX: 2, y: 2)
-        let removeFromViewTransform = moveUpTransform.concatenating(scaleUpTranform)
+        let closeButtonTransform = moveUpTransform.concatenating(scaleUpTranform)
         
         destination.closeButtonView.alpha = 0
-        destination.closeButtonView.transform = removeFromViewTransform
+        destination.closeButtonView.transform = closeButtonTransform
         
+        // MARK: Transition Final State
         let animator = UIViewPropertyAnimator(duration: durationTime, dampingRatio: 0.7) {
-            // MARK: Transition Final State
             NSLayoutConstraint.deactivate([widthConstraint, heightConstraint, bottomConstraint])
             destination.view.layer.transform = CATransform3DIdentity
             containerView.layoutIfNeeded()
@@ -69,8 +68,8 @@ class CardPresentationViewController: NSObject, UIViewControllerAnimatedTransiti
             destination.titleLabel.transform = titleTranform
         }
         
+        // MARK: Transition Completion
         animator.addCompletion { (finished) in
-            // MARK: Transition Completion
             transitionContext.completeTransition(true)
         }
         

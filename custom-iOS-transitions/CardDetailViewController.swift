@@ -30,5 +30,10 @@ class CardDetailViewController: UIViewController {
         captionLabel.text = caption
         descriptionLabel.text = descriptionText
         coverImage.image = cover
+        closeButtonView.layer.cornerRadius = 18
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 }

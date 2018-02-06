@@ -144,7 +144,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="PSO-kG-Oq0" secondAttribute="bottom" id="vY9-C5-Soh"/>
                                                     </constraints>
                                                 </view>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80979773116438358" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="aAg-FT-mXl"/>
                                                     <constraint firstAttribute="height" constant="36" id="xcR-7k-Zqt"/>

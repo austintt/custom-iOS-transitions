@@ -69,4 +69,9 @@ extension ViewController : UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return cardPresentationViewController
     }
+    
+    // TODO: Create a CardDismissalViewController
+//    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//        return cardDismissalViewController
+//    }
 }
