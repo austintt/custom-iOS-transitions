@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D90863E6202944FC007C7A1A /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90863E5202944FC007C7A1A /* CardData.swift */; };
+		D90863E8202947D8007C7A1A /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90863E7202947D8007C7A1A /* CardDetailViewController.swift */; };
+		D90863EA20294E80007C7A1A /* UIViewController+UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90863E920294E80007C7A1A /* UIViewController+UnwindSegue.swift */; };
 		D90C288C2029406D0034A929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C288B2029406D0034A929 /* AppDelegate.swift */; };
 		D90C288E2029406D0034A929 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C288D2029406D0034A929 /* ViewController.swift */; };
 		D90C28912029406D0034A929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90C288F2029406D0034A929 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		D90863E5202944FC007C7A1A /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		D90863E7202947D8007C7A1A /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		D90863E920294E80007C7A1A /* UIViewController+UnwindSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UnwindSegue.swift"; sourceTree = "<group>"; };
 		D90C28882029406D0034A929 /* custom-iOS-transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-iOS-transitions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90C288B2029406D0034A929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D90C288D2029406D0034A929 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				D90C288B2029406D0034A929 /* AppDelegate.swift */,
 				D90C288D2029406D0034A929 /* ViewController.swift */,
+				D90863E7202947D8007C7A1A /* CardDetailViewController.swift */,
 				D90863E5202944FC007C7A1A /* CardData.swift */,
 				D90C288F2029406D0034A929 /* Main.storyboard */,
 				D90C28922029406D0034A929 /* Assets.xcassets */,
 				D90C28942029406D0034A929 /* LaunchScreen.storyboard */,
 				D90C28972029406D0034A929 /* Info.plist */,
+				D90863E920294E80007C7A1A /* UIViewController+UnwindSegue.swift */,
 			);
 			path = "custom-iOS-transitions";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90863E6202944FC007C7A1A /* CardData.swift in Sources */,
+				D90863EA20294E80007C7A1A /* UIViewController+UnwindSegue.swift in Sources */,
+				D90863E8202947D8007C7A1A /* CardDetailViewController.swift in Sources */,
 				D90C288E2029406D0034A929 /* ViewController.swift in Sources */,
 				D90C288C2029406D0034A929 /* AppDelegate.swift in Sources */,
 			);

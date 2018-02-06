@@ -38,5 +38,17 @@ class ViewController: UIViewController {
         coverImage.image = CardData.shared.coverImage
     }
 
+    @IBAction func cardTapped(_ sender: Any) {
+        performSegue(withIdentifier: "cardDetailSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cardDetailSegue", let destination = segue.destination as? CardDetailViewController {
+            destination.titleText = CardData.shared.title
+            destination.caption = CardData.shared.caption
+            destination.cover = CardData.shared.coverImage
+            destination.descriptionText = CardData.shared.description
+        }
+    }
 }
 
