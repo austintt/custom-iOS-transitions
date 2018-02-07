@@ -15,3 +15,4 @@
 * [Create Custom UINavigationController Transitions](https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25)
 * [Custom View Controller presentations, the right way](https://medium.com/@raulriera/custom-view-controller-presentations-the-right-way-53e8e8e8118b)
 * [Spring (animation library)](https://github.com/mengto/spring)
+* [Designing Meaningful Animations](https://youtu.be/OqvQhZ0bTYY)
