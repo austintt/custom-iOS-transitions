@@ -18,7 +18,8 @@ let greenCircle = makeShape(color: #colorLiteral(red: 0.4666666687, green: 0.764
 let blueSquare = makeShape(color: #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), x: 20, y: 100)
 let pinkSquare = makeShape(color: #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1), x: 20, y: 180)
 let redSquare = makeShape(color: #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), x: 20, y: 260)
-let purpleCircle = makeShape(color: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), x: 20, y: 340)
+let purpleCircle = makeShape(color: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), x: 20, y: 340, radius: 25)
+
 containerView.addSubview(greenCircle)
 containerView.addSubview(blueSquare)
 containerView.addSubview(redSquare)
@@ -26,7 +27,7 @@ containerView.addSubview(pinkSquare)
 containerView.addSubview(purpleCircle)
 
 // MARK: Animations!
-UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut, .repeat, .autoreverse], animations: {
+UIView.animate(withDuration: 1, delay: 0.5, options: [.curveEaseInOut, .repeat, .autoreverse], animations: {
     
     /***
      * Translate
@@ -56,12 +57,6 @@ UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut, .repeat, .a
     purpleCircle.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
     
 },  completion: nil)
-
-
-
-
-
-
 
 
 
