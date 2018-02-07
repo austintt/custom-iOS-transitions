@@ -53,7 +53,7 @@ UIView.animate(withDuration: 1, delay: 0.5, options: [.curveEaseInOut, .repeat, 
     // Combination of animations
     redSquare.frame.origin.x = containerView.frame.width - 70
     redSquare.transform = blueSquare.transform.rotated(by: CGFloat(Double.pi / 2))
-    
+
     purpleCircle.frame.origin.x = containerView.frame.width - 70
     purpleCircle.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
     purpleCircle.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
