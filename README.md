@@ -3,9 +3,9 @@
 ![animation](assets/animationDemo.gif)
 
 ### Overview
+This project contains a Swift Playground with two pages. The first, demonstrating the basics of animation in iOS. The second, a prototype of a custom transition found on the App Store 'Today' tab.
 
-
-
+The repo also contains an Xcode project with a working custom transition, mimicking the previously mentioned app store transition.
 
 ### Sources
 * [Custom UIViewController Transitions: Getting Started - RayWenderlich](https://www.raywenderlich.com/170144/custom-uiviewcontroller-transitions-getting-started)

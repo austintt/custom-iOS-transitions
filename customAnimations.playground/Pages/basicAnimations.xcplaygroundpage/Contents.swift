@@ -4,6 +4,7 @@ import UIKit
 import PlaygroundSupport
 
 // MARK: Boring setup
+PlaygroundPage.current.needsIndefiniteExecution = true
 let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 600))
 containerView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 
@@ -55,6 +56,8 @@ UIView.animate(withDuration: 1, delay: 0.5, options: [.curveEaseInOut, .repeat, 
     
     purpleCircle.frame.origin.x = containerView.frame.width - 70
     purpleCircle.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+    purpleCircle.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+    
     
 },  completion: nil)
 
