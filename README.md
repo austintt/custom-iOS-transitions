@@ -7,7 +7,7 @@ This project contains a Swift Playground with two pages. The first, demonstratin
 
 The repo also contains an Xcode project with a working custom transition, mimicking the previously mentioned app store transition.
 
-### Sources
+### Resources
 * [Custom UIViewController Transitions: Getting Started - RayWenderlich](https://www.raywenderlich.com/170144/custom-uiviewcontroller-transitions-getting-started)
 * [iOS Animation Tutorial: Custom View Controller Presentation Transitions - RayWenderlich](https://www.raywenderlich.com/173576/ios-animation-tutorial-custom-view-controller-presentation-transitions-3)
 * [Custom Transitions - Design + Code](https://designcode.io/swift4-custom-transitions)
